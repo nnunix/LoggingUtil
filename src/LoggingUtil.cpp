@@ -526,7 +526,7 @@ int wmain(int argc, wchar_t* argv[])
 	{
 		SetUnhandledExceptionFilter(exceptionHandlerRoutine);
 		SetConsoleCtrlHandler(ctrlHandlerRoutine, TRUE);
-		logging_util_main(argc, argv);
+		return logging_util_main(argc, argv);
 	}
 	__except(1)
 	{
